@@ -6,7 +6,10 @@
 
   <div class="container">
     <span v-for="url in urls" :key="url">
-      <p>{{url.url.substring(0,20)}}... | <router-link :to="url.short">{{url.short}}</router-link></p>
+      <p>{{url.url.substring(0,25)}}... | <router-link :to="url.short">{{url.short}}</router-link></p>
+    </span>
+    <span >
+      <p>...</p>
     </span>
   </div>
   <Footer/>
